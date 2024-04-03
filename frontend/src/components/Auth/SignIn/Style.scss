@@ -1,0 +1,103 @@
+@import "../../../assets/scss/theme.scss";
+@import "../../../assets/scss/mixin.scss";
+
+.signIn-wrapper {
+    background: map-get($base_colors, 'white');
+    .side-wrapper {
+      @include gradient(152deg, $list1);
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding: 0px calculateRem(70px);
+      .side-content {
+       
+        h3 {
+            font-family: map-get($font-family, 'bold');
+            font-size: map-get($font-sizes, 'xxlarge') + 12;
+            color: map-get($base_colors, 'white');  
+            margin: 0px;
+        }
+      }
+      .side-image {
+        img {}
+      }
+      .logo {
+        p{
+            font-family: map-get($font-family, 'regular');
+            font-size: map-get($font-sizes, 'xsmall');
+            color: map-get($base_colors, 'white');    
+            margin-bottom: calculateRem(3px);
+        }
+      }
+    }
+    .main-wrapper {
+       .signIn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .signIn-title {
+            display: flex;
+            width: calculateRem(450px);
+            h4{
+                font-family: map-get($font-family, 'medium');
+                font-size: map-get($font-sizes, 'xxlarge');
+                color: map-get($base_colors, 'black');  
+                margin: 0px 0px calculateRem(49px);
+            }   
+        }
+        .signIn-form-controls {
+             form {
+                display: flex;
+                flex-direction: column; 
+                // .MuiFormControl-root {
+                //     label {
+                //         font-family: map-get($font-family, 'medium');
+                //         font-size: map-get($font-sizes, 'small');
+                //         color: map-get($base_colors, 'black');
+                //         margin-bottom: calculateRem(6px);
+                //     }
+                //     .MuiTextField-root {
+                //         margin-bottom: 25px;
+                //         .MuiInputBase-root {
+                //             @include size(50px, 450px);
+                //             background: map-get($base_colors, 'input-bg-color');
+                //             border: none;
+                //             border-radius: calculateRem(8px);
+                //             font-family: map-get($font-family, 'regular');
+                //             font-size: map-get($font-sizes, 'medium');
+                //             color: rgba($color: map-get($base_colors, 'black'), $alpha: 0.50);
+                //            .MuiOutlinedInput-notchedOutline {
+                //             border: none;
+                //            }
+                //            &:hover {
+                //             background: map-get($base_colors, 'white');
+                //             color: map-get($base_colors, 'black');
+                //             .MuiOutlinedInput-notchedOutline {
+                //                 border: 5px solid map-get($base_colors, 'input-border-color');
+                //                }
+                //            }
+                //         }
+
+                //     }
+                // }
+                .MuiBox-root {
+                    &.action-wrapper {
+                        margin-top: calculateRem(5px);
+                        .signIn-btn {
+                            @include size(50px, 200px);
+                           &:hover {
+                            background: map-get($base_colors, "primary-color");
+                           }
+                        }
+                    }
+                }
+            }
+        }
+       }
+    }
+}

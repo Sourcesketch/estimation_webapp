@@ -1,0 +1,326 @@
+@import "../../../assets/scss/theme.scss";
+@import "../../../assets/scss/mixin.scss";
+.nb-section {
+  padding: calculateRem(60px);
+  .nb-dashboard-title {
+    h4 {
+      font-family: map-get($font-family, "medium");
+      font-size: map-get($font-sizes, "xlarge");
+      color: map-get($base_colors, "black");
+      margin: 0px;
+      margin-bottom: calculateRem(14px);
+    }
+  }
+  .nb-dashboard-layout {
+    width: 100%;
+    display: flex;
+    .nb-dashboard-estimates {
+      width: 70%;
+      margin-right: calculateRem(32px);
+      .nb-estimatesHistory-wrapper {
+        background: map-get($base_colors, "white");
+        padding: calculateRem(20px) calculateRem(30px);
+        padding-top: 0px;
+        border-radius: calculateRem(8px);
+        @include shadow(0px, 3px, 6px, map-get($base_colors, "shadow-color"));
+        height: calc(100vh - 18rem);
+        overflow: auto;
+        .nb-estimatesHistory-header {
+          // margin-bottom: calculateRem(30px);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: sticky;
+          top: 0px;
+          padding-top: 20px;
+          background: map-get($base_colors, "white");
+          .main-title {
+            h5 {
+              font-family: map-get($font-family, "medium");
+              font-size: map-get($font-sizes, "medium");
+              color: rgba(
+                $color: map-get($base_colors, "primary-color"),
+                $alpha: 0.5
+              );
+              margin: 0px;
+            }
+          }
+          .nb-action-wrapper {
+            display: flex;
+            align-items: center;
+            .search-box {
+              position: relative;
+              @include size(30px, 390px);
+              margin-right: calculateRem(20px);
+              .search-input {
+                @include size(30px, 390px);
+                border-radius: calculateRem(8px);
+                border: 1px solid map-get($base_colors, "input-border-color");
+                padding-left: calculateRem(12px);
+                font-family: map-get($font-family, "regular");
+                font-size: map-get($font-sizes, "xsmall") - 1;
+                color: map-get($base_colors, "search-color");
+                &:hover,
+                &:focus {
+                  color: map-get($base_colors, "primary-color");
+                  outline: 1px solid map-get($base_colors, "input-border-color");
+                }
+              }
+              img {
+                position: absolute;
+                right: 10px;
+                top: 8px;
+              }
+            }
+            .sort-box {
+            }
+          }
+        }
+        .nb-estimatesHistory-content {
+          display: flex;
+          align-items: center;
+          padding-top: calculateRem(30px);
+          padding-bottom: calculateRem(30px);
+          //   justify-content: space-between;
+          .calender-wrapper {
+            display: flex;
+            width: 15%;
+            .date-box {
+              background: map-get($base_colors, "info-color");
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 8px 0px 0px 8px;
+              @include size(30px, 31px);
+              span {
+                font-family: map-get($font-family, "medium");
+                font-size: map-get($font-sizes, "xsmall");
+                color: map-get($base_colors, "white");
+              }
+            }
+            .monthYear-box {
+              background: map-get($base_colors, "white");
+              border: 1px solid map-get($base_colors, "input-border-color");
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 0px 8px 8px 0px;
+              @include size(30px, 70px);
+              span {
+                font-family: map-get($font-family, "regular");
+                font-size: map-get($font-sizes, "xsmall") - 1;
+                color: map-get($base_colors, "primary-color");
+              }
+            }
+          }
+          .project-meta {
+            width: 38.5%;
+            span {
+              font-family: map-get($font-family, "medium");
+              font-size: map-get($font-sizes, "xxsmall") - 1;
+              color: map-get($base_colors, "tertiary-color");
+            }
+            h5 {
+              font-family: map-get($font-family, "medium");
+              font-size: map-get($font-sizes, "normal");
+              color: map-get($base_colors, "info-color");
+              margin: 0px;
+              margin-bottom: calculateRem(4px);
+              a {
+                color: map-get($base_colors, "info-color");
+              }
+            }
+            p {
+              font-family: map-get($font-family, "medium");
+              font-size: map-get($font-sizes, "xxsmal");
+              color: map-get($base_colors, "primary-color");
+              margin: 0px;
+            }
+          }
+          .prog-lang {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 26.5%;
+            .lang-box {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: map-get($base_colors, "white");
+              border: 1px solid map-get($base_colors, "input-border-color");
+              height: calculateRem(20px);
+              min-width: calculateRem(40px);
+              width: auto;
+              padding: calculateRem(4px);
+              border-radius: calculateRem(4px);
+              margin-right: calculateRem(6px);
+              margin-bottom: calculateRem(6px);
+              span {
+                font-family: map-get($font-family, "regular");
+                font-size: map-get($font-sizes, "xsmall") - 1;
+                color: map-get($base_colors, "secondary-color");
+              }
+            }
+          }
+          .proj-status {
+            width: 20%;
+            display: flex;
+            justify-content: flex-end;
+            .status-box {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: map-get($base_colors, "white");
+              border: 1px solid map-get($base_colors, "input-border-color");
+              @include size(38px, 105px);
+              border-radius: calculateRem(4px);
+              span {
+                font-family: map-get($font-family, "regular");
+                font-size: map-get($font-sizes, "xsmall") - 1;
+                color: map-get($base_colors, "blue-text-color");
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .nb-dashboard-status {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      .nb-statuses-wrapper {
+        background: map-get($base_colors, "white");
+        padding: calculateRem(24px) calculateRem(30px);
+        border-radius: calculateRem(8px);
+        @include shadow(0px, 3px, 6px, map-get($base_colors, "shadow-color"));
+        height: calculateRem(321px);
+        margin-bottom: calculateRem(29px);
+        .nb-statuses-header {
+          .main-title {
+            margin-bottom: calculateRem(44px);
+            h5 {
+              font-family: map-get($font-family, "medium");
+              font-size: map-get($font-sizes, "medium");
+              color: rgba(
+                $color: map-get($base_colors, "primary-color"),
+                $alpha: 0.5
+              );
+              margin: 0px;
+            }
+          }
+        }
+        .nb-statuses-content {
+          .team-statuses {
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            margin-bottom: 26px;
+            width: 100%;
+            .title {
+              width: 20%;
+              h6 {
+                font-family: map-get($font-family, "regular");
+                font-size: map-get($font-sizes, "small");
+                color: map-get($base_colors, "blue-text-color");
+                margin: 0px;
+              }
+              &.nxb {
+                h6 {
+                  color: map-get($base_colors, "primary-color");
+                }
+              }
+            }
+            .count {
+              // width: 26.667%;
+              text-align: center;
+              // border-top: 1px solid map-get($base_colors, "input-bg-color");
+              span {
+                font-family: map-get($font-family, "regular");
+                font-size: map-get($font-sizes, "xxlarge") + 16;
+              }
+              &.completed-count {
+                width: 30%;
+                span {
+                  color: map-get($base_colors, "blue-text-color");
+                }
+              }
+              &.pending-count {
+                width: 30%;
+                span {
+                  color: map-get($base_colors, "tertiary-color");
+                }
+              }
+              &.draft-count {
+                width: 20%;
+                span {
+                  color: map-get($base_colors, "secondary-color");
+                }
+              }
+              &.completed-label {
+                width: 30%;
+                p {
+                  margin: 0px;
+                  color: map-get($base_colors, "blue-text-color");
+                  font-family: map-get($font-family, "regular");
+                  font-size: map-get($font-sizes, "xsmall") - 1;
+                  position: relative;
+                  &::before {
+                    content: "";
+                    height: calculateRem(9px);
+                    width: calculateRem(9px);
+                    position: absolute;
+                    top: 23.5%;
+                    left: 29px;
+                    background: map-get($base_colors, "blue-text-color");
+                  }
+                }
+              }
+              &.pending-label {
+                width: 30%;
+                p {
+                  margin: 0px;
+                  color: map-get($base_colors, "tertiary-color");
+                  font-family: map-get($font-family, "regular");
+                  font-size: map-get($font-sizes, "xsmall") - 1;
+                  position: relative;
+                  &::before {
+                    content: "";
+                    height: calculateRem(9px);
+                    width: calculateRem(9px);
+                    position: absolute;
+                    top: 23.5%;
+                    left: 11px;
+                    background: map-get($base_colors, "tertiary-color");
+                  }
+                }
+              }
+              &.draft-label {
+                width: 20%;
+                p {
+                  margin: 0px;
+                  color: map-get($base_colors, "primary-color");
+                  font-family: map-get($font-family, "regular");
+                  font-size: map-get($font-sizes, "xsmall") - 1;
+                  position: relative;
+                  &::before {
+                    content: "";
+                    height: calculateRem(9px);
+                    width: calculateRem(9px);
+                    position: absolute;
+                    top: 23.5%;
+                    left: 21px;
+                    background: map-get($base_colors, "primary-color");
+                  }
+                }
+              }
+            }
+            &.label-statuses {
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

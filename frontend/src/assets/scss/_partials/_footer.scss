@@ -1,0 +1,24 @@
+.nb-footer {
+  background: map-get($base_colors, "white");
+  height: calculateRem(40px);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: calculateRem(60px);
+
+  .nb-footer-wrapper {
+    p {
+      font-family: map-get($font-family, "normal");
+      font-size: map-get($font-sizes, "xsmall");
+      color: map-get($base_colors, "primary-color");
+      margin: 0px;
+
+      span {
+        font-family: map-get($font-family, "semibold-italic");
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import "../../assets/scss/theme.scss";
+@import "../../assets/scss/mixin.scss";
+
+.costing-card {
+  padding: 52px 30px;
+  box-shadow: 0px 3px 6px map-get($base_colors, "shadow-color") !important;
+  background-color: map-get($base_colors, "white");
+  max-width: 760px;
+  min-height: 635px;
+  margin: 60px auto 0;
+  // text-align: center;
+
+  .costing-title,
+  .costing-sub-title {
+    text-align: center;
+    color: map-get($base_colors, "blue-text-color");
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .costing-title {
+    font-weight: 700;
+    font-size: 40px;
+
+    span {
+      font-weight: 300;
+      font-size: 38px;
+    }
+  }
+
+  .costing-sub-title {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .costing-table {
+    width: 100%;
+    color: map-get($base_colors, "primary-color");
+    text-align: center;
+    margin-top: 48px;
+    border-top: none !important;
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid map-get($base_colors, "input-border-color");
+      padding: 6px 14px;
+      .MuiFormControl-root {
+        margin-bottom: calculateRem(0px);
+        .MuiTextField-root {
+          margin-bottom: calculateRem(0px);
+          .MuiInputBase-root {
+            @include size(20px, 35px);
+            background: transparent;
+            border: none;
+            outline: 0px;
+            border-radius: calculateRem(8px);
+            font-family: map-get($font-family, "regular");
+            font-size: map-get($font-sizes, "small");
+            color: rgba($color: map-get($base_colors, "primary-color"), $alpha: 1);
+            padding-left: 5px;
+            .MuiInputBase-input {
+              padding: 7px 4px;
+              text-align: right;
+            }
+            .MuiOutlinedInput-notchedOutline {
+              border: none;
+            }
+            &:hover {
+              background: map-get($base_colors, "white");
+              color: map-get($base_colors, "black");
+              .MuiOutlinedInput-notchedOutline {
+                border: 0px;
+                outline: 0px;
+              }
+            }
+            &::before, &::after {
+              border: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    th {
+      font-size: 16px;
+      font-family: map-get($font-family, "medium");
+      border-top: none;
+    }
+
+    td {
+      font-size: 14px;
+      font-family: map-get($font-family, "regular");
+    }
+  }
+}

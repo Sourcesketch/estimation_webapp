@@ -1,0 +1,16 @@
+// partials will be added here...
+@import "./_partials/topbar";
+@import "./_partials/footer";
+@import "./_partials/forms";
+@import "./_partials/buttons";
+@import "./_partials/popover";
+@import "./_partials/utilities";
+@import "./_partials/table";
+
+.circular-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

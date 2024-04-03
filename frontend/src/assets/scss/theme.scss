@@ -1,0 +1,53 @@
+// color palette
+$base_colors: (
+  "black": #000000,
+  "white": #ffffff,
+  "primary-color": #2d2d2d,
+  "secondary-color": #707070,
+  "tertiary-color": #f7941d,
+  "info-color": #004a80,
+  "success-color": #8dc63f,
+  "danger-color": #f44336,
+  "search-color": #cccbcb,
+  "blue-text-color": #0278ce,
+  "shadow-color": #0000000d,
+  "input-bg-color": #f3f3f4,
+  "input-border-color": #e5e5e5,
+  "btn-color": #606060,
+  "status-bar-color": #d5d5d5,
+  "cost-border-color": #0278ce33,
+  "span-color": #515151,
+);
+$page_bg: (
+  "bg1": #f3f3f4,
+  "gd1": #606060,
+  "gd2": #212121,
+  "topbar-gd1": #606060,
+  "topbar-gd2": #212121,
+);
+// gradients list
+$list1: map-get($page_bg, "gd1"), map-get($page_bg, "gd2");
+$list2: map-get($page_bg, "topbar-gd1"), map-get($page_bg, "topbar-gd2");
+// font-family
+$font-family: (
+  "light": "SegoeUI-Light",
+  "Italic": "SegoeUI-Italic",
+  "regular": "SegoeUI",
+  "medium": "SegoeUI-Semibold",
+  "semibold-italic": "SegoeUI-SemiboldItalic",
+  "bold": "SegoeUI-Bold",
+  "black": "SegoeUIBlack",
+);
+// font-sizes
+$font-sizes: (
+  "xxlarge": 24px,
+  "xlarge": 22px,
+  "large": 20px,
+  "medium": 18px,
+  "normal": 16px,
+  "small": 14px,
+  "xsmall": 12px,
+  "xxsmall": 10px,
+);
+// icons
+// $icons: (// "bg-lb": url("../images/bg-left-bottom.svg"),);

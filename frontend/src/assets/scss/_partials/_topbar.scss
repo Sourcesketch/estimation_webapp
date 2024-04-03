@@ -1,0 +1,83 @@
+.nb-header {
+  @include gradient(272deg, $list2);
+  height: calculateRem(80px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 59px 15px 59px;
+  position: sticky;
+  top: 0px;
+  .nb-right-container {
+    display: flex;
+    align-items: center;
+    .nb-logo {
+      h2 {
+        font-family: map-get($font-family, "regular");
+        font-size: map-get($font-sizes, "xxlarge");
+        color: rgba($color: map-get($base_colors, "white"), $alpha: 0.9);
+        line-height: 1;
+        span {
+          display: block;
+          font-family: map-get($font-family, "black");
+          color: map-get($base_colors, "white");
+        }
+      }
+    }
+    .nb-create-est-btn {
+      margin-left: calculateRem(60px);
+      font-family: map-get($font-family, "bold");
+      .new-est-btn {
+        a {
+          @include size(40px, 215px);
+          font-family: map-get($font-family, "bold");
+          font-size: map-get($font-sizes, "small");
+          color: map-get($base_colors, "primary-color");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        span {
+          font-family: map-get($font-family, "black");
+          font-size: map-get($font-sizes, "medium");
+          padding-right: calculateRem(6px);
+        }
+        &:hover {
+          background: map-get($base_colors, "white");
+        }
+      }
+    }
+  }
+
+  .nb-center-container{
+    display: flex;
+    align-items: center;
+    h4{
+      font-family: map-get($font-family, "medium");
+      color: map-get($base_colors, "white");
+      font-size: map-get($font-sizes, "xlarge" );
+      margin: 0 ;
+    }
+  }
+
+  .nb-left-container {
+    display: flex;
+    align-items: center;
+    .nb-notifi-wrapper {
+      img {
+      }
+    }
+    .nb-profile-wrapper {
+      background: map-get($base_colors, "white");
+      @include size(40px, 40px);
+      border: 1px solid map-get($base_colors, "white");
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: map-get($font-family, "bold");
+      font-size: map-get($font-sizes, "normal");
+      color: map-get($base_colors, "primary-color");
+      margin-left: calculateRem(60px);
+    }
+  }
+}

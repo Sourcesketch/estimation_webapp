@@ -1,0 +1,27 @@
+.MuiPopover-root.profile-popover .MuiPaper-root {
+  @include size(55px, 95px);
+  //   @include shadow(5px, 5px, 20px, map-get($shadow, "profile-box-shadow"));
+  border-radius: calculateRem(4px);
+  margin-left: -59px;
+  margin-top: 0px;
+  padding: 0px calculateRem(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .MuiTypography-root.MuiTypography-h5 {
+    // font-family: map-get($font-family, "regular");
+    // font-size: map-get($font-sizes, "medium");
+    // color: map-get($base_colors, "secondary-color");
+    margin: 5px 0px calculateRem(4px);
+    // padding: calculateRem(12px) calculateRem(12px) 0px;
+  }
+  a {
+    font-family: map-get($font-family, "regular");
+    font-size: map-get($font-sizes, "medium");
+    color: map-get($base_colors, "blue-text-color");
+    display: inline-block;
+    padding: 0px calculateRem(12px) calculateRem(12px);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

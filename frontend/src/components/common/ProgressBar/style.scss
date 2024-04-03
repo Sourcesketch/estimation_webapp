@@ -1,0 +1,22 @@
+@import "../../../assets/scss/theme.scss";
+@import "../../../assets/scss/mixin.scss";
+
+
+.progress-bar{
+    display: flex;
+    position: sticky;
+    top: calculateRem(80px);
+    .step {
+        background-color: map-get($base_colors, 'status-bar-color');
+        height: 10px;
+        flex: 1;
+        &:not(:last-child){
+            margin-right: 2px;
+        }
+        &.active{
+        background-color: map-get($base_colors, 'success-color');
+
+        }
+    }
+
+}

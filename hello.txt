@@ -1,0 +1,10 @@
+ const data2 = axios.get(`http://localhost:5000/api/users/selectedUser?username=${username}`)
+        .then((res) => {
+          const isResource = console.log(res.data.role_id.name);
+          return isResource;
+          console.log(isResource);
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Username");
+        });

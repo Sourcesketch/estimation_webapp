@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'SegoeUI-Bold';
+    src: url('SegoeUI-Bold.eot');
+    src: url('SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Bold.woff2') format('woff2'),
+        url('SegoeUI-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('SegoeUI.eot');
+    src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI.woff2') format('woff2'),
+        url('SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI-Italic';
+    src: url('SegoeUI-Italic.eot');
+    src: url('SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Italic.woff2') format('woff2'),
+        url('SegoeUI-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI-BoldItalic';
+    src: url('SegoeUI-BoldItalic.eot');
+    src: url('SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-BoldItalic.woff2') format('woff2'),
+        url('SegoeUI-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI-Semilight';
+    src: url('SegoeUI-Semilight.eot');
+    src: url('SegoeUI-Semilight.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Semilight.woff2') format('woff2'),
+        url('SegoeUI-Semilight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI-Light';
+    src: url('SegoeUI-Light.eot');
+    src: url('SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Light.woff2') format('woff2'),
+        url('SegoeUI-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUIBlack-Italic';
+    src: url('SegoeUIBlack-Italic.eot');
+    src: url('SegoeUIBlack-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUIBlack-Italic.woff2') format('woff2'),
+        url('SegoeUIBlack-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUIBlack';
+    src: url('SegoeUIBlack.eot');
+    src: url('SegoeUIBlack.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUIBlack.woff2') format('woff2'),
+        url('SegoeUIBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI-LightItalic';
+    src: url('SegoeUI-LightItalic.eot');
+    src: url('SegoeUI-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-LightItalic.woff2') format('woff2'),
+        url('SegoeUI-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI-Semilight';
+    src: url('SegoeUI-SemilightItalic.eot');
+    src: url('SegoeUI-SemilightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-SemilightItalic.woff2') format('woff2'),
+        url('SegoeUI-SemilightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI-Semibold';
+    src: url('SegoeUI-Semibold.eot');
+    src: url('SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Semibold.woff2') format('woff2'),
+        url('SegoeUI-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeUI-SemiboldItalic';
+    src: url('SegoeUI-SemiboldItalic.eot');
+    src: url('SegoeUI-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-SemiboldItalic.woff2') format('woff2'),
+        url('SegoeUI-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+

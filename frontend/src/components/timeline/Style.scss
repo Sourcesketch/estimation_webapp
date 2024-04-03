@@ -1,0 +1,112 @@
+@import "../../assets/scss/theme.scss";
+@import "../../assets/scss/mixin.scss";
+
+.text-center {
+  text-align: center;
+}
+.nb-section {
+  padding-bottom: 0px;
+  overflow: auto;
+
+  .main_content {
+    display: flex;
+    //justify-content: space-between;
+    justify-content: center;
+    column-gap: 30px;
+    max-width: 1060px;
+    height: 65vh;
+    margin: auto;
+    &--left {
+      flex: 0 0 70%;
+      padding: calculateRem(30px);
+      overflow: auto;
+      .nb-innertimeline-wrapper {
+        border: 1px solid map-get($base_colors, "input-border-color");
+      }
+    }
+    &--right {
+      flex: 0 0 30%;
+      position: relative;
+      overflow: hidden;
+      .card-padding {
+        padding-bottom: 75px;
+        box-shadow: none;
+        .expertise {
+          padding-left: 0;
+          margin: 0;
+          li {
+            font-family: map-get($font-family, "regular");
+            color: map-get($base_colors, "primary-color");
+            font-size: 14px;
+            border-bottom: 1px solid map-get($base_colors, "input-bg-color");
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            transition: 0.3s all ease-in-out;
+            opacity: 0.8;
+            &.active {
+              font-family: map-get($font-family, "medium");
+              color: map-get($base_colors, "blue-text-color");
+              opacity: 1;
+            }
+            &:hover,
+            &:active {
+              .action-btns {
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+            .action-btns {
+              display: flex;
+              align-items: center;
+              margin-left: 10px;
+              // position: absolute;
+              // right: 0;
+              // top: 0;
+              visibility: hidden;
+              opacity: 0;
+              transition: 0.3s all ease-in-out;
+              span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+                padding: 3.5px;
+                border-radius: 100px;
+                font-size: 14px;
+                background-color: transparent;
+                color: map-get($base_colors, "span-color");
+                &:hover {
+                  background-color: map-get($base_colors, "input-border-color");
+                }
+                &:not(:last-child) {
+                  margin-right: 3.5px;
+                }
+              }
+            }
+          }
+        }
+        .add-button {
+          color: map-get($page_bg, "gd1");
+
+          position: absolute;
+          bottom: -6px;
+          left: 0;
+
+          &:hover {
+            color: map-get($base_colors, "tertiary-color");
+          }
+        }
+      }
+    }
+    > div {
+      background-color: map-get($base_colors, "white");
+      box-shadow: 0px 3px 6px map-get($base_colors, "shadow-color");
+      border-radius: 8px;
+    }
+  }
+}

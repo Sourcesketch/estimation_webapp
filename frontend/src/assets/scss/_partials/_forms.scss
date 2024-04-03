@@ -1,0 +1,133 @@
+form {
+.MuiFormControl-root {
+  margin-bottom: calculateRem(20px);
+  label {
+    font-family: map-get($font-family, "medium");
+    font-size: map-get($font-sizes, "small");
+    color: map-get($base_colors, "black");
+    margin-bottom: calculateRem(6px);
+  }
+  .MuiTextField-root {
+    margin-bottom: calculateRem(5px);
+    .MuiInputBase-root {
+      @include size(50px, 450px);
+      background: map-get($base_colors, "input-bg-color");
+      border: none;
+      border-radius: calculateRem(8px);
+      font-family: map-get($font-family, "regular");
+      font-size: map-get($font-sizes, "medium");
+      color: rgba($color: map-get($base_colors, "black"), $alpha: 0.5);
+      .MuiOutlinedInput-notchedOutline {
+        border: none;
+      }
+      &:hover {
+        background: map-get($base_colors, "white");
+        color: map-get($base_colors, "black");
+        .MuiOutlinedInput-notchedOutline {
+          border: 5px solid map-get($base_colors, "input-border-color");
+        }
+      }
+    }
+  }
+  .MuiTypography-subtitle2  {
+    color: map-get($base_colors, danger-color);
+    font-family: map-get($font-family, "meidum");
+    font-size: map-get($font-sizes, "xsmall");
+    // margin-bottom: calculateRem(20px);
+  }
+}
+}
+// select box
+.sort-box {
+  position: relative;
+  .sort-autocomplete {
+    width: calculateRem(140px);
+    font-family: map-get($font-family, "regular");
+    font-size: map-get($font-sizes, "xsmall") - 1;
+    color: map-get($base_colors, "search-color");
+    margin-top: calculateRem(-2px);
+    padding-left: calculateRem(10px);
+    background: map-get($base_colors, "white");
+    @include size(30px, 140px);
+    border-color: map-get($base_colors, "input-border-color");
+    // outline: 1px solid map-get($base_colors, "input-border-color");
+    border-width: 1px;
+    border-radius: calculateRem(8px);
+    &:hover,
+    &:focus,
+    &:active {
+      color: map-get($base_colors, "primary-color");
+      outline: 1px solid map-get($base_colors, "input-border-color");
+    }
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+// select box
+.assign-selectbox {
+  position: relative;
+  margin-top: calculateRem(5px);
+  .assign-resources-selectbox {
+    width: 100%;
+    height: calculateRem(52px);
+    background-color: map-get($base_colors, "input-bg-color");
+    border: 0px;
+    border-radius: calculateRem(8px);
+    font-family: map-get($font-family, "regular");
+    font-size: map-get($font-sizes, "medium") ;
+    color: rgba($color: map-get($base_colors, "black"), $alpha: 0.5);
+    padding: calculateRem(10px) calculateRem(14px);
+    line-height: 1.2;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    &:hover, &:focus-visible {
+      background: map-get($base_colors, "white");
+      outline: 5px solid map-get($base_colors, "input-border-color");
+      padding: 0px 0px 0px calculateRem(14px);
+      color: map-get($base_colors, "black");
+    }
+    &.est-timeMode-selectbox {
+      background-color: transparent;
+      font-family: map-get($font-family, "medium");
+      font-size: map-get($font-sizes, "xsmall") ;
+      color: map-get($base_colors, "blue-text-color");
+      &:hover, &:focus-visible {
+       outline: none;
+       border: none;
+       background: transparent;
+      }
+    }
+  }
+  img {
+    position: absolute;
+    top: 50%; 
+    right: 20px;
+  }
+  &.select-timeMode {
+    img {
+      position: absolute;
+      top: 50%; 
+      right: 10px;
+    }
+  }
+}
+// select box menu list
+.MuiMenu-list {
+  padding: calculateRem(12px);
+  .MuiMenuItem-root {
+    font-family: map-get($font-family, "regular");
+    font-size: map-get($font-sizes, "xsmall") - 1;
+    color: map-get($base_colors, "primary-color");
+    img {
+      display: inline-block;
+      margin-right: calculateRem(8.66px);
+    }
+  }
+}

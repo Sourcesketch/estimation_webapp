@@ -1,0 +1,58 @@
+.MuiButtonBase-root {
+  text-transform: capitalize;
+
+  &.dark-button {
+    background: map-get($base_colors, "primary-color");
+    color: map-get($base_colors, "white");
+    border-radius: calculateRem(8px);
+    padding: 0px;
+
+    &:hover {
+      background: map-get($base_colors, "primary-color");
+    }
+  }
+
+  &.secondary-btn {
+    background: map-get($base_colors, "btn-color");
+    color: map-get($base_colors, "white");
+    border-radius: calculateRem(8px);
+    padding: 0px;
+    &:hover {
+      background: map-get($base_colors, "btn-color");
+    }
+  }
+
+  &.light-btn {
+    background: map-get($base_colors, "white");
+    color: map-get($base_colors, "primary-color");
+    border-radius: calculateRem(8px);
+    padding: 0px;
+
+    &:hover {
+      background: map-get($base_colors, "white");
+    }
+  }
+
+  &.blue-button {
+    background: map-get($base_colors, "blue-text-color");
+    color: map-get($base_colors, "white");
+    border-radius: calculateRem(8px);
+    padding: 0px;
+
+    &:hover {
+      background: map-get($base_colors, "blue-text-color");
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+  &.AddRow {
+    color: map-get($base_colors, "primary-color");
+    font-family: map-get($font-family, "medium");
+    font-size: map-get($font-sizes, "small");
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

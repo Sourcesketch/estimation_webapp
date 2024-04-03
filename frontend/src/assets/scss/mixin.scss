@@ -1,0 +1,31 @@
+// for calculation
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+// for shadow 
+@mixin shadow($x, $y, $blur, $color) {
+  -webkit-box-shadow: $x $y $blur $color;
+  -moz-box-shadow: $x $y $blur $color;
+  box-shadow: $x $y $blur $color;
+}
+// for animate
+@mixin animate($property: all, $duration: 1s, $easing: ease) {
+  -webkit-transition: $property $duration $easing;
+  -moz-transition: $property $duration $easing;
+  -o-transition: $property $duration $easing;
+  transition: $property $duration $easing;
+}
+// for dimension
+@mixin size($height, $width) {
+   height: $height;
+   width: $width;
+}
+// for gradient
+
+@mixin gradient($angle, $list) { 
+  background: -webkit-linear-gradient($angle, $list);
+  background: -moz-linear-gradient($angle, $list);
+  background: -o-linear-gradient($angle, $list);
+  background: linear-gradient($angle, $list);  
+}
